@@ -1,0 +1,148 @@
+{
+	"items": [
+		{
+			"sys": {
+				"id": "1"
+			},
+			"fields": {
+				"title": "Fox 1",
+				"price": 22.45,
+				"category": "Forest",
+				"filter": "forest",
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./img/Goods1.png"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "2"
+			},
+			"fields": {
+				"title": "Fox 2",
+				"price": 10.99,
+				"category": "Other",
+				"filter": "other",
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./img/Goods2.png"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "3"
+			},
+			"fields": {
+				"title": "Fox 3",
+				"price": 65.00,
+				"category": "Forest",
+				"filter": "forest",
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./img/Goods3.png"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "4"
+			},
+			"fields": {
+				"title": "Fox 4",
+				"price": 10.99,
+				"category": "Forest",
+				"filter": "forest",
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./img/Goods4.png"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "5"
+			},
+			"fields": {
+				"title": "Fox 5",
+				"price": 12.50,
+				"category": "Other",
+				"filter": "other",
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./img/Goods5.png"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "6"
+			},
+			"fields": {
+				"title": "Fox 6",
+				"price": 10.99,
+				"category": "Foxs kids",
+				"filter": "kids",
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./img/Goods6.png"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "7"
+			},
+			"fields": {
+				"title": "Fox 7",
+				"price": 35.00,
+				"category": "Forest",
+				"filter": "forest",
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./img/Goods7.png"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "8"
+			},
+			"fields": {
+				"title": "Fox 8",
+				"price": 15.50,
+				"category": "Foxs kids",
+				"filter": "kids",
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./img/Goods8.png"
+						}
+					}
+				}
+			}
+		}
+	]
+}

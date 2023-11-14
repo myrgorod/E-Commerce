@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header__container">		
+				<div class="header__title">
+					<div class="header__logo">
+						<img class="logo whiteL" src="img/logo_white.png" alt="logo" class="header__logo-wite">
+						<img class="logo redL" src="img/logo_red.png" alt="logo" class="header__logo-red">
+		
+					</div>
+				<div class="header__data"> 				 
+				<div class="header__nav hamburger-menu">				
+					  <ul class="header__menu-box">
+						<li><a class="header__menu-item" href="#">shop</a></li>
+						<li><a class="header__menu-item" href="/index.html">mainpage</a></li>
+						<li><a class="header__menu-item" href="/history.html">our history</a></li>
+						<li><a class="header__menu-item" href="/shop.html">all ites</a></li>							
+					  </ul>
+				</div>
+				<a href="#" class="closeBtn">
+					<span onclick="openNav()"><i class="fa-solid fa-ellipsis"></i></span>
+				</a>
+				<div id="nav" class="header__overlay">
+					<div class="header__overlay-content"></div>				
+					  <ul class="header__menu-box">
+						<li><a class="header__menu-item" href="#">shop</a></li>
+						<li><a class="header__menu-item" href="/index.html">mainpage</a></li>
+						<li><a class="header__menu-item" href="/history.html">our history</a></li>
+						<li><a class="header__menu-item" href="/shop.html">all  ites</a></li>					
+							<a href="#" class="closeBtn">
+								<span onclick="closeNav()"><i class="fa-solid fa-xmark"></i></span>
+							</a> 					
+					  </ul>
+				</div>
+					<div class="header__icons">
+						<span class="header-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+						<div class="cart__items">0</div>
+						<span class="header-icon white"><img src="img/fox-svgrepo-com 1.png" alt="fox"></span>
+						<span class="header-icon black"><img src="img/black_fox.png" alt="fox"></span>
+					</div>
+				</div>
+				</div>
+			
+			
+		</div>
+	
+		<div class="page__name">
+			<div class="page__name-links">
+				<span class="link" id="home">Home/</span>
+				<span class="link" id="about">All Ites</span>
+			</div>
+			<div class="page__name-title">All Ites</div>		
+		</div>
+			
+	
+		<div class="container">
+	
+		<div class="shop">
+			<aside class="aside">
+				<div class="parametres">
+					<div class="search__input">
+						<input type="text" id="item-search" name="q" placeholder="Search"/>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					<h3 class="topic">Topic</h3>
+					<div class="categories">
+						<div class="categories__thing">
+							<div class="category filter-option" data-filter="*" onclick=filterCategory(event)>All</div>
+							<div class="category filter-option" data-filter="forest" onclick=filterCategory(event)>Forest</div>
+						</div>
+						<div class="categories__thing">
+							<div class="category filter-option" data-filter="kids" onclick=filterCategory(event)>Fox kids</div>
+							<div class="category filter-option" data-filter="other" onclick=filterCategory(event)>Other</div>
+						</div>
+					</div>
+					<div class="range-box">
+						<h4 class="topic">Price</h4>
+						<input type="range" name="range" id="range-input" class="range-input" min="0" max="100" value="45">
+						<h3 id="range-title" class="range-title">Value:$0</h3>
+					</div>
+				</div>
+			</aside>
+	
+	
+	
+			<section class="products">
+				<div class="products__center">
+					<!-- single product --> 
+					
+				
+					<!-- end of single product -->
+					
+				</div>
+			</section>
+			<!-- end of Products -->
+			<div class="cart__overlay">
+				<div class="cart">
+					<span class="close-cart">
+						<i class="fa-solid fa-xmark"></i>
+						<h2 class="cart__title">Your Bag</h2>
+					</span>
+						<div class="cart__content">
+							<!-- cart item -->
+							<!-- <div class="cart__item">
+								<div class="cart__item-img">
+									<img class="cart__img"src="./img/Goods2.png" alt="fox">														
+									<div class="cart__data">
+										<h4 class="title">Stylish chair</h4>
+										<h3 class="price">$10.00</h3>									
+									</div>
+								</div>
+								<div class="cart__count">								
+									<div class="item__count">
+										<div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+										<div class="item__amount">1</div>
+										<div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+									</div>
+									<div class="item__remove">
+										<p class="remove">Remove </p>
+										<span class="cross"> <img src="/img/Vector.png" alt="cross"> </span>										
+									</div>
+								</div>								
+							</div>								 -->
+							<!-- end of cart item -->
+							<!-- <div class="cart__item">
+								
+							</div>	 -->
+						</div>
+						<div class="cart__footer">
+							<h3 class="total">Total: <br> $<span class="cart__total">0</span></h3>
+							<div class="cart__buttons">
+								<button class="cart__checkout">Checkout</button>
+							<button class="cart__clear banner-btn">Clear Bag</button>
+							</div>
+							
+						</div>
+				
+				</div>
+			</div>
+	
+			
+			
+		</div>
+		</div>
+	
+	
+
+<div class="description__button">
+	<a href="/history.html">All foxes</a>			
+</div>
+	
+
+	<footer class="footer">
+		<div class="footer__data">
+			<div class="footer__data-fox">
+				<div class="logo">
+					<img class="logo-red"src="img/logo_red.png" alt="logo">
+				</div>
+				<p class="footer__fox">
+					Lorem ipsum dolor sit amet consectetur adipisicing
+				</p>
+				<p class="footer__fox">
+					Call us : 8956 3254 7887
+				</p>
+				<span class="footer__icons">
+					<img src="img/footer__icons.png" alt="icons">
+				</span>
+			</div>
+			<div class="footer__data-shop">
+				<div class="footer__shop">
+					<h4 class="titleF">Shop</h4>
+					<p class="footer__text">
+						Lorem, ipsum.
+					</p>
+					<p class="footer__text">
+						Lorem, ipsum.
+					</p>
+				</div>
+				<div class="footer__products">
+					<h4 class="titleF">Products</h4>
+					<p class="footer__text">
+						Lorem, ipsum.
+					</p>
+					<p class="footer__text">
+						Lorem, ipsum.
+					</p>
+				</div>
+			</div>
+			<div class="footer__data-united">
+				<div class="footer__data-collection">
+					<div class="footer__collection">
+						<h4 class="titleF">Collection</h4>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+				</div>
+				</div>
+	
+				<div class="footer__data-weekly">
+					<div class="footer__weekly">
+						<h4 class="titleF">Weekly</h4>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+					</div>
+					<div class="footer__about">
+						<h4 class="titleF">About</h4>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+						<p class="footer__text">
+							Lorem, ipsum.
+						</p>
+					</div>
+				</div>	
+			</div>			
+				
+		</div>
+			
+		
+		<div class="footer__rights">
+			<p class="rights">
+				Storelogo, 2023 All rights reserved
+			</p>
+		</div>
+	</footer>	
+</div>	
+	
+	<script src="js/shop.js"></script>
+	<script src="https://kit.fontawesome.com/e69d5c5cc5.js" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>

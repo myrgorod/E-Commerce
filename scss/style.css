@@ -1,0 +1,521 @@
+:root {
+  --fontMonserrat: "Montserrat";
+  --fontPlay: "Playfair Display";
+  --fontRoboto: "Roboto";
+  --color_main: #CC5520;
+  --color_grey: #969595;
+  --color_bg: #F4F4F4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__container {
+  background-image: url(../img/Fox_little.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+}
+.header__overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  background-color: rgba(20, 20, 20, 0.5);
+  overflow-y: hidden;
+  transition: all 0.5s;
+}
+.header__overlay .closeBtn {
+  position: absolute;
+}
+.header__overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.header__data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__title {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 0 15px;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.4509803922);
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+}
+.header__nav {
+  display: none;
+}
+.header__logo .logo {
+  width: 120px;
+  margin-top: 5px;
+}
+.header__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+.header-icon {
+  color: #fff;
+  opacity: 1;
+  margin-right: 15px;
+}
+.header__menu-item {
+  font-family: var(--fontMonserrat);
+  font-size: 14px;
+  line-height: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header__menu-item:hover {
+  color: var(--color_main);
+  transition: all 0.3s;
+}
+.header__menu-box {
+  display: block;
+}
+.header__text {
+  display: block;
+  margin: 0 -10px 0 10px;
+  text-align: left;
+  color: #fff;
+  min-width: 320px;
+  font-family: var(--fontPlay);
+}
+.header__text-title {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.cart__items {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color_main);
+  color: white;
+  border-radius: 3px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 35px;
+  max-width: 350px;
+  font-family: var(--fontMonserrat);
+}
+
+.description {
+  display: block;
+  margin: auto;
+  min-width: 320px;
+  padding-bottom: 25px;
+}
+.description__part {
+  min-width: 320px;
+  margin: 30px 5px 20px 5px;
+}
+.description__part .linkL {
+  font-size: 14px;
+  font-family: var(--fontMonserrat);
+  font-weight: 600;
+  line-height: 35px;
+  color: var(--color_grey);
+  margin-left: 10px;
+}
+.description__part .text {
+  font-size: 18px;
+  line-height: 34px;
+  font-family: var(--fontMonserrat);
+  font-weight: 700;
+  margin: 0 -20px 0 10px;
+}
+.description__part .food {
+  background-color: var(--color_bg);
+  background-image: url(../img/han_lit.png);
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding: 45px 0 30px;
+}
+.description__part .office {
+  background-color: var(--color_bg);
+  background-image: url(../img/cock_lit.png);
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding: 45px 0 30px;
+}
+.description__part .house {
+  background-color: var(--color_bg);
+  background-image: url(../img/fox_lit.png);
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding: 45px 0 190px;
+}
+.description__button {
+  width: 355px;
+  height: 70px;
+  color: #fff;
+  background-color: var(--color_main);
+  border: none;
+  font-size: 20px;
+  font-family: var(--fontMonserrat);
+  font-weight: 500;
+  line-height: 30px;
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.subscribe {
+  min-width: 320px;
+  display: block;
+  text-align: center;
+  background-color: var(--color_bg);
+  font-family: var(--fontMonserrat);
+  margin-top: 30px;
+  padding-bottom: 35px;
+}
+.subscribe__input {
+  display: block;
+  margin: auto;
+}
+.subscribe__title {
+  font-family: var(--fontMonserrat);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  padding-top: 45px;
+}
+.subscribe__text {
+  font-family: var(--fontMonserrat);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-inline: 10px;
+  padding-top: 15px;
+}
+.subscribe__email {
+  padding-top: 30px;
+}
+.subscribe .subEmail {
+  width: 338px;
+  height: 70px;
+  border: 1px solid var(--color_grey);
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 15px;
+}
+.subscribe__submit {
+  padding-top: 20px;
+}
+.subscribe .subSub {
+  width: 355px;
+  height: 72px;
+  border: 1px solid black;
+  background-color: black;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.footer {
+  color: #fff;
+  background-color: black;
+  font-size: 14px;
+  font-family: var(--fontMonserrat);
+  font-weight: 400;
+  line-height: 22px;
+}
+.footer .logo {
+  padding-bottom: 15px;
+}
+.footer__rights {
+  text-align: center;
+  padding: 15px 0;
+}
+.footer__fox {
+  width: 250px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.footer__weekly {
+  padding-bottom: 15px;
+}
+.footer__icons {
+  padding: 15px 0;
+}
+.footer__data {
+  display: block;
+}
+.footer__data-shop {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+.footer__data-united {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+.footer__data-fox {
+  text-align: center;
+  padding: 50px 0 10px 0;
+}
+
+@media (min-width: 768px) {
+  .header__overlay {
+    display: none;
+  }
+  .header__container {
+    background-image: url(../img/Fox_main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    position: relative;
+  }
+  .header__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.4509803922);
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+  }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .header__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+  }
+  .header-icon {
+    color: #fff;
+    opacity: 1;
+    margin: 10px;
+  }
+  .header__menu-item {
+    padding: 0 15px;
+    font-family: var(--fontMonserrat);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .header__menu-item:hover {
+    color: var(--color_main);
+    transition: all 0.3s;
+  }
+  .header__menu-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__logo {
+    width: 33%;
+    text-align: justify;
+  }
+  .header__data {
+    width: 67%;
+  }
+  .header__text {
+    display: block;
+    margin: auto 150px;
+    text-align: left;
+    color: #fff;
+    max-width: 1200px;
+    font-family: var(--fontPlay);
+  }
+  .header__text-title {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 100px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 40px;
+    max-width: 450px;
+    font-family: var(--fontMonserrat);
+  }
+  .closeBtn {
+    display: none;
+  }
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    height: 100%;
+    padding: 0 150px 0;
+  }
+  .description__part {
+    width: 100%;
+    padding: 25px;
+    margin: 0;
+  }
+  .description__part .linkL {
+    font-size: 18px;
+    font-family: var(--fontMonserrat);
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--color_grey);
+  }
+  .description__part .text {
+    font-size: 24px;
+    line-height: 34px;
+    font-family: var(--fontMonserrat);
+    font-weight: 700;
+    padding: 60px 0 85px 0;
+  }
+  .description__part .food {
+    background-color: var(--color_bg);
+    background-image: url(../img/han1.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    margin-bottom: 30px;
+    padding: 15px 0 20px 0;
+  }
+  .description__part .food .text {
+    margin-left: 10px;
+    max-width: 250px;
+  }
+  .description__part .office {
+    background-color: var(--color_bg);
+    background-image: url(../img/cock.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    padding: 35px 0 25px 0;
+  }
+  .description__part .office .text {
+    max-width: 300px;
+  }
+  .description__part .house {
+    background-color: var(--color_bg);
+    background-image: url(../img/fox1\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+  }
+  .description__part .house .text {
+    padding: 20px 0 260px;
+    margin-left: 10px;
+    max-width: 250px;
+  }
+  .description__button {
+    width: 600px;
+    height: 70px;
+    color: #fff;
+    background-color: var(--color_main);
+    border: none;
+    font-size: 20px;
+    font-family: var(--fontMonserrat);
+    font-weight: 500;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .subscribe {
+    padding: 50px 0 150px 0;
+  }
+  .subscribe__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe .subEmail {
+    width: 540px;
+  }
+  .subscribe .subSub {
+    width: 215px;
+  }
+  .subscribe__submit {
+    padding-top: 30px;
+  }
+  .footer__shop {
+    margin-right: 30px;
+  }
+  .footer__collection {
+    margin-right: 30px;
+  }
+  .footer__weekly {
+    margin-right: 30px;
+  }
+  .footer__data {
+    display: flex;
+    max-width: 1200px;
+    padding-inline: 150px;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer__data-fox {
+    margin-right: 30px;
+    padding: 15px 0;
+  }
+  .footer__data-shop {
+    display: flex;
+    margin-right: 30px;
+  }
+  .footer__data-products {
+    display: flex;
+  }
+  .footer__data-weekly {
+    display: flex;
+  }
+  .footer__data-united {
+    display: flex;
+  }
+  .cart__items {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color_main);
+    color: white;
+    border-radius: 3px;
+  }
+}/*# sourceMappingURL=style.css.map */
